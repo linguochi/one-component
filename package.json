@@ -1,0 +1,21 @@
+{
+  "name": "one-component",
+  "version": "1.0.0",
+  "description": "component for OneView",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "one",
+    "view"
+  ],
+  "author": "linguochi",
+  "license": "MIT",
+  "devDependencies": {
+    "webpack": "^4.11.1"
+  },
+  "dependencies": {
+    "vue": "^2.5.16"
+  }
+}
