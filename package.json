@@ -14,10 +14,15 @@
   "author": "linguochi",
   "license": "MIT",
   "devDependencies": {
+    "babel-loader": "^7.1.4",
+    "css-loader": "^0.28.11",
+    "vue-loader": "^15.2.4",
+    "vue-style-loader": "^4.1.0",
     "webpack": "^4.11.1",
     "webpack-cli": "^3.0.3"
   },
   "dependencies": {
+    "axios": "^0.18.0",
     "vue": "^2.5.16"
   }
 }
