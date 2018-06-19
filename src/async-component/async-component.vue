@@ -15,14 +15,18 @@
       // 父组件提供请求地址
       url: {
         type: String,
-        default: ''
-      }
+        default: '',
+      },
+      debug: {
+        type: Boolean,
+        default: false,
+      },
     },
     inheritAttrs: true,
     data() {
       return {
         resData: '',
-        mode: ''
+        mode: '',
       };
     },
     watch: {
@@ -42,9 +46,11 @@
             res = await window.SyncComponentCache[this.url];
           }
           let Fn = Function;
-          this.mode = new Fn(`return ${res.data}`)();
-        }
-      }
-    }
+          this.debug ? console.log(res) : '';
+          this.mode = (new Fn(`return ${res.data}`)()).default;
+          this.debug ? console.log(this.mode) : '';
+        },
+      },
+    },
   };
 </script>

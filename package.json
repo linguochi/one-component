@@ -1,6 +1,6 @@
 {
   "name": "one-component",
-  "version": "1.0.3",
+  "version": "1.0.8",
   "description": "component for OneView",
   "main": "dist/bundle.js",
   "scripts": {
